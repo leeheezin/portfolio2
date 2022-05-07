@@ -25,13 +25,13 @@ body {
 #nav {}
 .inner {padding-left: 7%; margin: 0 auto; text-transform: uppercase;}
 .intro {display: flex; justify-content: center; align-items: center; width: 100%; background-size: 100%;}
-.intro_text {padding: 30vw 0;}
+.intro_text {padding: 26vw 0;}
 .intro_text h2 {white-space: nowrap; text-transform: uppercase; font-family: "Abel"; font-size: 2vw; font-weight: 400; color: #fff; letter-spacing: 2vw;}
 #section1 {width: 100%; background-color: #2A57DC;}
 #section2 {position: relative; width: 100%; background-color: #1458E4;}
 #section3 {width: 100%;}
 #section4 {width: 100%;}
-#section5 {}
+#section5 {width: 100%;}
 #section6 {}
 #section7 {}
 #section8 {background: #222;}
@@ -401,7 +401,7 @@ body {
 /* section5 */
 #section5 .projects {
   background:url('../img/intro2.png') no-repeat center;
-  background-size: cover;
+  background-size: 100%;
 }
 .pro {
   display: flex; 
@@ -540,9 +540,10 @@ body {
   width: 50%;
   float: left;
   border-right: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
 }
 .js_wrap:nth-child(odd) {
-  border:0;
+  border-right: 0;
 }
 .js_tit {width: 100%;}
 .js_txt {width: 100%; text-transform: uppercase;}
@@ -896,8 +897,10 @@ body {
 #section7 .intro {
   background-image: url('../img/intro4.png');
   background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.ani_wrap {width: 100%;}
+.ani_wrap {width: 100%; border-bottom: 1px solid #e0e0e0;}
 .ani {
   display: flex;
   justify-content: space-between;
