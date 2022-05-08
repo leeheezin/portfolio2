@@ -471,7 +471,7 @@ body {
 .view_btn .view_text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
-  top: 0;
+  top: -10%;
   left: 16%;
   right: 0;
   bottom: 0;
@@ -576,7 +576,7 @@ body {
   width: 29%;
   font-family: 'Raleway';
   font-size: 1.1vw;
-  margin-top: 9%;
+  margin-top: 10%;
   float: right;
   transition: 0.25s ease;
 }
@@ -1108,6 +1108,7 @@ body {
     width: calc(100% - 50px);
     margin-left:50px;
   }
+  /* section1 */
   .sec1_inner {
       flex-direction: column-reverse;
   }
@@ -1150,6 +1151,7 @@ body {
     margin: 20% auto;
     float: none;
   }
+  .sec2_inner {height: 50vh;}
   .intro_text h2 {font-size: 4vw;}
 /* section3 */
 .sec3 {padding: 8% 5%;}
@@ -1164,7 +1166,7 @@ body {
 .prof_text span {
   width: 86%;
   font-size: 3vw;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 .prof_cont figure {
   width: 100%;
@@ -1212,15 +1214,15 @@ body {
 .pro_txt_left {width: 100%;}
 .pro_txt_right {width: 100%;}
 .pro_txt_right a {
-  width: 37%;
+  width: 47%;
   font-size: 4vw;
   margin-top: 5%;
 }
+.view_btn .view_text {left: 37%; top: 1%;}
 .pro_txt_right a::after {right: -15%;}
 .pro_txt_right .pro_numb {
   font-size: 36vw;
-  top: -165%; 
-  right: -5%;
+  top: 0%; 
 }
 .pro_txt span {
   display: block;
@@ -1230,7 +1232,7 @@ body {
   font-size: 9.5vw;
 }
 .pro_txt p {
-  font-size: 3vw;
+  font-size: 3.5vw;
   padding: 4% 0 8%;
 }
 .pro_img {width: 100%; height: 30vh;}
@@ -1252,9 +1254,16 @@ body {
 .js_wrap {width: 100%;}
 .js_tit span {font-size: 4vw;}
 .js_tit h3 {font-size: 8vw;}
-.js_txt p {font-size: 3vw; width: 83%;}
-.js_txt a {font-size: 4vw; width: 100%;}
-.js_cont {height: 55vh;}
+.js_txt p {font-size: 3.5vw; width: 83%;}
+.js_txt a {
+  font-size: 3vw; 
+  width: 50%;
+  margin-top: 0;
+}
+.js_cont {
+  height: 55vh;
+  margin-top: 23%;
+}
 .controls i {font-size: 30px;}
 .controls i:nth-child(2), .controls i:nth-child(4){font-size: 35px;}
 .controls .play-pause {width: 35%; height: 35%;}
