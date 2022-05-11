@@ -9,7 +9,7 @@ body {
 }
 
 .notebook-page {
-  padding: 90px 40px 40px 85px;
+  padding: 8vw 5vw 3vw 7vw;
   background-color: #fff;
   background-image: linear-gradient(#c4c4c4 0.05em, transparent 0.05em);
   background-size: 100% 2em;
@@ -38,6 +38,7 @@ textarea#msg {
   min-height: 450px;
   resize: none;
   line-height: 1.25;
+  width: 100%;
 }
 
 aside.context {
