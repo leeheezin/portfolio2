@@ -10,7 +10,7 @@ a {
   font-family: Courier, monospace;
   font-smoothing: antialiased;
   margin: 0.8em 0;
-  font-size: 4vw;
+  font-size: 18px;
   color: #f0f0f0;
 }
 
@@ -20,8 +20,8 @@ a {
 }
 
 #message {
-  margin-left: -38%;
-  margin-top: -27%;
+  margin-left: -33%;
+  margin-top: -26%;
   position: absolute;
   height: 260px;
   width: 85%;
@@ -33,7 +33,7 @@ a {
   text-shadow: 0 0 8px rgba(209, 194, 165, 0.1);
   position: absolute;
   color: #f0f0f0;
-  bottom: -38%;
+  bottom: 0;
 }
 
 #container {
