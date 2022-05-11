@@ -196,7 +196,6 @@ body {
 }
 .side2 a {
   color: #222;
-  border-bottom: 1px solid #c4c4c4;
   font-size: 4vw;
   padding: 1%;
   display: block;
@@ -1374,7 +1373,7 @@ body {
     margin-top: 0;
   }
   .js_cont {
-    height: 55vh;
+    height: 50vh;
     margin-top: 23%;
   }
   .controls i {
