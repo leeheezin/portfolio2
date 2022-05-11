@@ -33,7 +33,7 @@ a {
   text-shadow: 0 0 8px rgba(209, 194, 165, 0.1);
   position: absolute;
   color: #f0f0f0;
-  bottom: 0;
+  bottom: -38%;
 }
 
 #container {
