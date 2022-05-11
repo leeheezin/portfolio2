@@ -20,11 +20,11 @@ a {
 }
 
 #message {
-  margin-left: -300px;
-  margin-top: -130px;
+  margin-left: -33%;
+  margin-top: -26%;
   position: absolute;
   height: 260px;
-  width: 600px;
+  width: 85%;
   left: 50%;
   top: 50%;
 }
