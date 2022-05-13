@@ -77,6 +77,7 @@ body {
 }
 #section8 {
   background: #222;
+  color: #fff;
 }
 #footer {
   width: calc(100% - 100px);
@@ -375,8 +376,8 @@ body {
 }
 .prof_cont figure img {
   opacity: 0;
-  transform: translateX(200px);
-  transition: all 0.6s 0.6s ease-in;
+  transform: translateY(200px);
+  transition: all 0.5s 0.5s ease-in;
 }
 .sec3 .prof_intro {
   opacity: 0;
@@ -522,11 +523,12 @@ body {
 /* button */
 .view_btn {
   position: relative;
-  font-size: 1.2vw;
   display: inline-block;
   font-family: "Raleway";
   margin-top: 29%;
   width: 35%;
+  height: auto;
+  vertical-align: middle;
 }
 .view_btn .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -926,7 +928,8 @@ body {
   height: 100vh;
   padding: 10% 0 0 5%;
 }
-.text_ani {
+.text_ani,
+.loading_ani {
   width: 90%;
   height: 90%;
 }
@@ -1000,44 +1003,70 @@ body {
   width: 100%;
 }
 /* section8 */
-.about {
-}
-.about_txt h2 {
-  position: relative;
-  font-size: 4.5vw;
-  font-weight: 300;
-  margin-bottom: 30vw;
-  color: #fff;
-  font-family: "Jost";
-  text-transform: uppercase;
-}
-.about_wrap1,
-.about_wrap2 {
-  color: #fff;
-  font-family: "Jost";
-  text-transform: uppercase;
+.prog {
+  padding: 5%;
+  width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
 }
-.about_cont1 {
-  width: 50vw;
-  padding-left: 12vw;
+.prog_tit {
+  font-family: "Raleway";
 }
-.about_cont4 {
-  width: 20vw;
+.prog_tit span {
+  font-size: 1.2vw;
+  padding-bottom: 5%;
+  display: block;
 }
-/* .show figure {width: 25vw;}
-.show img {width: 100%;}
-.show span {font-size: 1.5vw; padding-top: 1.2vw; display: block;} */
-
+.prog_tit h3 {
+  font-size: 5vw;
+  font-weight: 700;
+}
+.prog_tit a {
+  font-size: 1.2vw;
+  border-bottom: 1px solid #828282;
+  font-family: "ChosunNm";
+  padding: 1%;
+}
+.prog_numb {
+  font-size: 10vw;
+  font-family: "Poppins";
+}
+.php_img {
+  background-image: url(../img/php.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+}
+.prog_text {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-between;
+  font-family: "ChosunNm";
+  font-size: 1.2vw;
+}
+.prog_txt1 {
+  width: 50%;
+  border-right: 1px solid #5b5b5b;
+}
+.prog_txt1 p {
+  padding: 5%;
+}
+.prog_txt2 {
+  width: 50%;
+}
+.prog_txt2 p {
+  padding: 5%;
+}
 /* footer */
 .foot_info1 {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 35vh;
-  border-bottom: 1px solid #c4c4c4;
+  height: 33vh;
+  border-bottom: 1px solid #5b5b5b;
   text-transform: uppercase;
   padding: 3%;
 }
@@ -1087,6 +1116,7 @@ body {
 }
 .f_txt {
   width: 30%;
+  padding-bottom: 10%;
 }
 .f_txt h3 {
   font-size: 2vw;
@@ -1100,15 +1130,15 @@ body {
   font-size: 1vw;
   font-weight: 300;
   display: block;
-  padding: 1%;
+  padding: 1% 3%;
 }
 .f_info {
   width: 50%;
 }
 .info {
-  width: 45%;
+  width: 49%;
   display: inline-block;
-  padding-bottom: 3%;
+  padding-bottom: 5%;
 }
 .f_info em {
   font-family: "Abel";
@@ -1128,6 +1158,41 @@ body {
 }
 
 /* media */
+@media (max-width: 1600px) {
+  .view_btn .view_text {
+    top: 16%;
+    left: 10%;
+  }
+}
+@media (max-width: 1280px) {
+  .view_btn {
+    width: 38%;
+  }
+  .view_btn .view_text {
+    top: 21%;
+    right: -20%;
+  }
+}
+@media (max-width: 1024px) {
+  .view_btn .circle {
+    width: 2rem;
+    height: 2rem;
+  }
+  .view_btn .view_text {
+    top: 18%;
+  }
+  .view_btn .circle .icon.arrow {
+    left: 0.3rem;
+    width: 1rem;
+    height: 0.1rem;
+  }
+  .view_btn .circle .icon.arrow::before {
+    top: -0.25rem;
+    right: 0.06rem;
+    width: 0.6rem;
+    height: 0.55rem;
+  }
+}
 @media (max-width: 900px) {
   #header {
     width: 50px;
@@ -1264,7 +1329,7 @@ body {
     padding: 18% 5%;
   }
   .skill_text p {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .skill_text .txt_left {
     padding-bottom: 7vw;
@@ -1300,8 +1365,8 @@ body {
     margin-top: 5%;
   }
   .view_btn .view_text {
-    left: 9%;
-    top: 22%;
+    left: 0%;
+    top: 18%;
     font-size: 3.5vw;
   }
   .pro_txt_right a::after {
@@ -1400,13 +1465,14 @@ body {
     border: none;
   }
   .ani_txt1 h3 {
-    font-size: 5vw;
+    font-size: 7vw;
   }
   .ani_txt2 span {
     width: 36%;
   }
   .ani_txt2 p {
     padding-top: 20%;
+    font-size: 4vw;
   }
   .ani_cont {
     width: 100%;
@@ -1431,11 +1497,11 @@ body {
     width: 100%;
   }
   .f_massage p {
-    font-size: 4.5vw;
+    font-size: 5vw;
   }
   .f_mail p {
     padding-bottom: 6%;
-    font-size: 3.3vw;
+    font-size: 4vw;
   }
   .f_mail button {
     padding: 2% 10%;
@@ -1452,28 +1518,46 @@ body {
   }
   .f_txt {
     width: 100%;
-    height: 35%;
+    height: 45%;
   }
   .f_txt h3 {
-    font-size: 4.5vw;
+    font-size: 6vw;
   }
   .f_txt p {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .f_info {
     width: 100%;
   }
   .f_info em {
-    font-size: 3vw;
+    font-size: 5vw;
   }
   .f_info span {
-    font-size: 2vw;
+    font-size: 4vw;
   }
   .copy {
     padding: 0 7% 3%;
   }
+  .info {
+    width: 100%;
+    display: block;
+  }
 }
-
+@media (max-width: 768px) {
+  .view_btn .view_text {
+    top: 23%;
+  }
+  .view_btn .circle .icon.arrow {
+    width: 1.5rem;
+    left: 1.2rem;
+  }
+  .view_btn .circle .icon.arrow::before {
+    top: -0.4rem;
+    right: 0.05rem;
+    width: 1rem;
+    height: 1rem;
+  }
+}
 @media (max-width: 480px) {
   /* header */
   .side2 a {
@@ -1481,9 +1565,12 @@ body {
     line-height: 2.5;
   }
   /* section5 */
+  .pro_txt_right a {
+    width: 40%;
+  }
   .view_btn .circle {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
   }
   .view_btn .circle .icon.arrow {
     left: 0.1rem;
@@ -1492,12 +1579,28 @@ body {
   }
   .view_btn .circle .icon.arrow::before {
     top: -0.4rem;
-    right: -0.4rem;
+    right: 0.1rem;
     width: 0.8rem;
     height: 0.8rem;
   }
   .view_btn .view_text {
-    top: 29%;
-    left: 20%;
+    top: 18%;
+    left: 13%;
+  }
+}
+@media (max-width: 360px) {
+  .view_btn .view_text {
+    left: 8%;
+  }
+  .view_btn .circle .icon.arrow {
+    left: 0.1rem;
+    width: 1rem;
+    height: 0.125rem;
+  }
+  .view_btn .circle .icon.arrow::before {
+    top: -0.3rem;
+    right: 0.05rem;
+    width: 0.6rem;
+    height: 0.6rem;
   }
 }
